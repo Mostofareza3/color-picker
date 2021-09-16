@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color picker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            
+            background:rgb(255, 255, 255);
+        }
+        section{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: auto 0;
+        }
+        button{
+            padding: 10px;
+            background-color: aqua;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+         <button onclick="colorPicker()"><h2>Click Me and Get Color</h2></button>
+         <h3>Color code: <span></span> </h3>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
